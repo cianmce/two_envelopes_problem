@@ -16,3 +16,13 @@ Meaning there's a net gain by switching
 ```
 bundle exec ruby envelopes.rb --count=100000 --verbose=false --randomize=true
 ```
+
+### Sample output:
+```
+$ bundle exec ruby envelopes.rb --count=10000000 --verbose=false --randomize=true
+Randomize values: true
+Total iterations: 10,000,000
+I've made €75,086,029,600 from changing vs €75,090,138,140 if I stuck
+Gain: -0.0055%
+Time: 4.708215 seconds
+```

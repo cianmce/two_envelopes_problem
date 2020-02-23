@@ -23,7 +23,7 @@ end
 
 def run_simulation(run_count: 100000, verbose: false, randomize_values: true)
   puts "Randomize values: #{randomize_values}"
-  puts "Total iterations: #{run_count}"
+  puts "Total iterations: #{number_string(run_count)}"
   start_time = Time.now
   money_made_changing = 0
   money_made_sticking = 0
