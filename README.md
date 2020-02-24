@@ -37,7 +37,7 @@ Gain: 0.0064%
 Time: 3.945445 seconds
 ```
 
-#### Randomizing values in envelopes
+#### Verbose randomizing values in envelopes
 ```
 $ bundle exec ruby envelopes.rb --count=5 --verbose=true --randomize=true
 Randomize values: true
@@ -74,7 +74,7 @@ Gain: 13.6262%
 Time: 0.000305 seconds
 ```
 
-#### Fixing values in envelopes as 100 & 200
+#### Verbose fixing values in envelopes as 100 & 200
 ```
 $ bundle exec ruby envelopes.rb --count=5 --verbose=true --randomize=false
 
