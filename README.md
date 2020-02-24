@@ -17,6 +17,7 @@ bundle exec ruby envelopes.rb --count=100000 --verbose=false --randomize=true
 ```
 
 ### Sample output:
+#### Randomizing values in envelopes
 ```
 $ bundle exec ruby envelopes.rb --count=10000000 --verbose=false --randomize=true
 Randomize values: true
@@ -26,42 +27,17 @@ Gain: -0.0055%
 Time: 4.708215 seconds
 ```
 
-
+#### Fixing values in envelopes as 100 & 200
 ```
-$ bundle exec ruby envelopes.rb --count=5 --verbose=true --randomize=false
-
+ bundle exec ruby envelopes.rb --count=10000000 --verbose=false --randomize=false
 Randomize values: false
-Total iterations: 5
-I chose envelope: #0 which has €200
-The other box either has €400 or €100 or
-I'm changing my guess to: #1 which has €100
-I've made €100 from changing vs €200 if I stuck
-Gain: -50.0%
-I chose envelope: #1 which has €100
-The other box either has €200 or €50 or
-I'm changing my guess to: #0 which has €200
-I've made €300 from changing vs €300 if I stuck
-Gain: 0.0%
-I chose envelope: #0 which has €200
-The other box either has €400 or €100 or
-I'm changing my guess to: #1 which has €100
-I've made €400 from changing vs €500 if I stuck
-Gain: -20.0%
-I chose envelope: #0 which has €100
-The other box either has €200 or €50 or
-I'm changing my guess to: #1 which has €200
-I've made €600 from changing vs €600 if I stuck
-Gain: 0.0%
-I chose envelope: #0 which has €200
-The other box either has €400 or €100 or
-I'm changing my guess to: #1 which has €100
-I've made €700 from changing vs €800 if I stuck
-Gain: -12.5%
-I've made €700 from changing vs €800 if I stuck
-Gain: -12.5%
-Time: 0.000205 seconds
+Total iterations: 10,000,000
+I've made €1,500,048,000 from changing vs €1,499,952,000 if I stuck
+Gain: 0.0064%
+Time: 3.945445 seconds
 ```
 
+#### Randomizing values in envelopes
 ```
 $ bundle exec ruby envelopes.rb --count=5 --verbose=true --randomize=true
 Randomize values: true
@@ -96,4 +72,40 @@ Gain: 13.6262%
 I've made €35,440 from changing vs €31,190 if I stuck
 Gain: 13.6262%
 Time: 0.000305 seconds
+```
+
+#### Fixing values in envelopes as 100 & 200
+```
+$ bundle exec ruby envelopes.rb --count=5 --verbose=true --randomize=false
+
+Randomize values: false
+Total iterations: 5
+I chose envelope: #0 which has €200
+The other box either has €400 or €100 or
+I'm changing my guess to: #1 which has €100
+I've made €100 from changing vs €200 if I stuck
+Gain: -50.0%
+I chose envelope: #1 which has €100
+The other box either has €200 or €50 or
+I'm changing my guess to: #0 which has €200
+I've made €300 from changing vs €300 if I stuck
+Gain: 0.0%
+I chose envelope: #0 which has €200
+The other box either has €400 or €100 or
+I'm changing my guess to: #1 which has €100
+I've made €400 from changing vs €500 if I stuck
+Gain: -20.0%
+I chose envelope: #0 which has €100
+The other box either has €200 or €50 or
+I'm changing my guess to: #1 which has €200
+I've made €600 from changing vs €600 if I stuck
+Gain: 0.0%
+I chose envelope: #0 which has €200
+The other box either has €400 or €100 or
+I'm changing my guess to: #1 which has €100
+I've made €700 from changing vs €800 if I stuck
+Gain: -12.5%
+I've made €700 from changing vs €800 if I stuck
+Gain: -12.5%
+Time: 0.000205 seconds
 ```
