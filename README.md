@@ -29,7 +29,7 @@ Time: 4.708215 seconds
 
 #### Fixing values in envelopes as 100 & 200
 ```
- bundle exec ruby envelopes.rb --count=10000000 --verbose=false --randomize=false
+$ bundle exec ruby envelopes.rb --count=10000000 --verbose=false --randomize=false
 Randomize values: false
 Total iterations: 10,000,000
 I've made €1,500,048,000 from changing vs €1,499,952,000 if I stuck
