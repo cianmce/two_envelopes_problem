@@ -109,3 +109,8 @@ I've made €700 from changing vs €800 if I stuck
 Gain: -12.5%
 Time: 0.000205 seconds
 ```
+## Explanation
+Vsauce2 has a video explaining the paradox:
+[youtube.com/watch?v=5LWfXhggC70](https://www.youtube.com/watch?v=5LWfXhggC70)
+[![Vsauce2 - The Two Envelopes Paradox](https://i3.ytimg.com/vi/5LWfXhggC70/maxresdefault.jpg)](https://www.youtube.com/watch?v=5LWfXhggC70)
+
